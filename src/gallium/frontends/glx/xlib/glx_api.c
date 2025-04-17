@@ -1884,13 +1884,18 @@ glXCreateWindow(Display *dpy, GLXFBConfig config, Window win,
 {
    XMesaVisual xmvis = (XMesaVisual) config;
    XMesaBuffer xmbuf;
+   const unsigned char value = 0;
+   
    if (!xmvis)
       return 0;
 
    xmbuf = XMesaCreateWindowBuffer(xmvis, win);
    if (!xmbuf)
       return 0;
-
+   else {
+      Atom var1 = XInternAtom(dpy,"_MESA_DRV",0);
+      XChangeProperty(dpy,win,var1,6,8,0,&value,1);
+  }
    (void) dpy;
    (void) attribList;  /* Ignored in GLX 1.3 */
 
