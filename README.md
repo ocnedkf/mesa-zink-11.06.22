@@ -10,6 +10,6 @@ git clone https://github.com/ocnedkf/mesa-zink-11.06.22
 <br>
 cd mesa-zink-11.06.22
 <br>
-meson . build -Dgallium-va=false -Ddri-drivers= -Dgallium-drivers=zink -Ddri3=false -Dvulkan-drivers= -Dglx=xlib -Dplatforms=x11 -Dbuildtype=release -Dglvnd=false -Dllvm=disabled -Dlibunwind=disabled -Dzstd=true -Degl=disabled --prefix=/usr
+meson . build -Dgallium-va=false -Ddri-drivers= -Dgallium-drivers=zink -Ddri3=false -Dvulkan-drivers= -Dglx=xlib -Dplatforms=x11 -Dbuildtype=release -Dglvnd=false -Dllvm=disabled -Dlibunwind=disabled -Degl=disabled --prefix=/usr
 <br>
 ninja -C build -j$(nproc) install
