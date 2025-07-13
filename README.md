@@ -2,7 +2,7 @@ This fork introduces changes to the build process as documented in the original 
 <br>
 Please use the following commands to compile the Zink(Make sure to execute it in the Ubuntu 18.04 environment):​
 <br>
-apt update && apt -y install python3 python3-pip python3-mako cmake zlib1g-dev zlib1g bison flex pkg-config libx11-dev libxext-dev libxcb-randr0-dev libxrandr-dev libdrm-dev libdrm2 git ninja-build
+apt update && apt -y install python3 python3-pip python3-mako cmake zlib1g-dev bison flex pkg-config libx11-dev libxext-dev libxcb-randr0-dev libxrandr-dev libdrm-dev libdrm2 git ninja-build
 <br>
 pip3 install meson
 <br>
